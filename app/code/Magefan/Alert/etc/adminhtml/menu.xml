@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Copyright 2016 aheadWorks. All rights reserved.
+* See LICENSE.txt for license details.
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magefan_Alert::main" title="Alert Note" module="Magefan_Alert" sortOrder="1000" dependsOnModule="Magefan_Alert" parent="Magento_Backend::content" resource="Magefan_Alert::main"/>
+        <add id="Magefan_Alert::note" title="Note" module="Magefan_Alert" sortOrder="1" parent="Magefan_Alert::main" action="mf_alert_admin/note/index" resource="Magefan_Alert::note"/>
+       
+    </menu>
+</config>
